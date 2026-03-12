@@ -228,4 +228,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   turnedOn: 0
   light: {fileID: 351592221194857700}
+  lType: 1
   lightChangeSpeed: 5

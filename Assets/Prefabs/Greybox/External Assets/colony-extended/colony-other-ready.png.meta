@@ -1,0 +1,2249 @@
+fileFormatVersion: 2
+guid: fbf2fbed7b33a7a41b4851b53c918118
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4845121318395341872
+    second: colony-other-ready_0
+  - first:
+      213: 6532408652005162620
+    second: colony-other-ready_1
+  - first:
+      213: -8384830615760537949
+    second: colony-other-ready_2
+  - first:
+      213: -2123210838375300937
+    second: colony-other-ready_3
+  - first:
+      213: -6598708446232288680
+    second: colony-other-ready_4
+  - first:
+      213: 6131143794515081240
+    second: colony-other-ready_5
+  - first:
+      213: 5144816943965339397
+    second: colony-other-ready_6
+  - first:
+      213: -4576611710926425923
+    second: colony-other-ready_7
+  - first:
+      213: -8890375011435595916
+    second: colony-other-ready_8
+  - first:
+      213: -2809819473654141335
+    second: colony-other-ready_9
+  - first:
+      213: 5664150730714025095
+    second: colony-other-ready_10
+  - first:
+      213: 7502934102371110083
+    second: colony-other-ready_11
+  - first:
+      213: -5675053174679880589
+    second: colony-other-ready_12
+  - first:
+      213: 7924007423117680367
+    second: colony-other-ready_13
+  - first:
+      213: -7407843385929027094
+    second: colony-other-ready_14
+  - first:
+      213: -4168414740872836162
+    second: colony-other-ready_15
+  - first:
+      213: -3760457863267484201
+    second: colony-other-ready_16
+  - first:
+      213: 7192285401681461067
+    second: colony-other-ready_17
+  - first:
+      213: -4683948340491638743
+    second: colony-other-ready_18
+  - first:
+      213: 3709642429479284460
+    second: colony-other-ready_19
+  - first:
+      213: -3213839737524006010
+    second: colony-other-ready_20
+  - first:
+      213: -8214326188169621556
+    second: colony-other-ready_21
+  - first:
+      213: -7111274304451248693
+    second: colony-other-ready_22
+  - first:
+      213: -1958301824734126687
+    second: colony-other-ready_23
+  - first:
+      213: 7110255889796721572
+    second: colony-other-ready_24
+  - first:
+      213: 6780051031173085663
+    second: colony-other-ready_25
+  - first:
+      213: 6165239270786857610
+    second: colony-other-ready_26
+  - first:
+      213: -6102356726545807519
+    second: colony-other-ready_27
+  - first:
+      213: 6400737977860829965
+    second: colony-other-ready_28
+  - first:
+      213: 3811685418079636627
+    second: colony-other-ready_29
+  - first:
+      213: 8302513170412356812
+    second: colony-other-ready_30
+  - first:
+      213: 1347721600963647856
+    second: colony-other-ready_31
+  - first:
+      213: -990864087428483157
+    second: colony-other-ready_32
+  - first:
+      213: 7970120910647801778
+    second: colony-other-ready_33
+  - first:
+      213: 3044320359616858573
+    second: colony-other-ready_34
+  - first:
+      213: 6583021093740746786
+    second: colony-other-ready_35
+  - first:
+      213: 5322712686279066382
+    second: colony-other-ready_36
+  - first:
+      213: 3657279015114603792
+    second: colony-other-ready_37
+  - first:
+      213: -6942363083255698576
+    second: colony-other-ready_38
+  - first:
+      213: 6011775085611207893
+    second: colony-other-ready_39
+  - first:
+      213: -4988984148354182149
+    second: colony-other-ready_40
+  - first:
+      213: -6518091464067497105
+    second: colony-other-ready_41
+  - first:
+      213: 1204191226054276617
+    second: colony-other-ready_42
+  - first:
+      213: 6016200925447331945
+    second: colony-other-ready_43
+  - first:
+      213: -7891187222792391611
+    second: colony-other-ready_44
+  - first:
+      213: 5506689644803155720
+    second: colony-other-ready_45
+  - first:
+      213: 5154011225403917006
+    second: colony-other-ready_46
+  - first:
+      213: -7123394651258802420
+    second: colony-other-ready_47
+  - first:
+      213: 224058207284611046
+    second: colony-other-ready_48
+  - first:
+      213: 4206173580688096470
+    second: colony-other-ready_49
+  - first:
+      213: -3086038146633414554
+    second: colony-other-ready_50
+  - first:
+      213: -6127672336971083465
+    second: colony-other-ready_51
+  - first:
+      213: 1479034204422895510
+    second: colony-other-ready_52
+  - first:
+      213: -5608667396613692646
+    second: colony-other-ready_53
+  - first:
+      213: -3519233119446572328
+    second: colony-other-ready_54
+  - first:
+      213: 4167508110414127724
+    second: colony-other-ready_55
+  - first:
+      213: -1688734414177672978
+    second: colony-other-ready_56
+  - first:
+      213: -294858167236834532
+    second: colony-other-ready_57
+  - first:
+      213: 565022791568544874
+    second: colony-other-ready_58
+  - first:
+      213: 6744304486674260569
+    second: colony-other-ready_59
+  - first:
+      213: -190520405346299171
+    second: colony-other-ready_60
+  - first:
+      213: -426582616002933591
+    second: colony-other-ready_61
+  - first:
+      213: -2344247033205751274
+    second: colony-other-ready_62
+  - first:
+      213: -1884167999084308561
+    second: colony-other-ready_63
+  - first:
+      213: -7128986601762522800
+    second: colony-other-ready_64
+  - first:
+      213: -8613746238248989631
+    second: colony-other-ready_65
+  - first:
+      213: 2338602411934801166
+    second: colony-other-ready_66
+  - first:
+      213: -1798442942729588946
+    second: colony-other-ready_67
+  - first:
+      213: -135337696258657836
+    second: colony-other-ready_68
+  - first:
+      213: -3721276803284206338
+    second: colony-other-ready_69
+  - first:
+      213: 3717099115774600787
+    second: colony-other-ready_70
+  - first:
+      213: -7937743886633113264
+    second: colony-other-ready_71
+  - first:
+      213: 5231206534797169026
+    second: colony-other-ready_72
+  - first:
+      213: 2810285032533812759
+    second: colony-other-ready_73
+  - first:
+      213: -493507781389799569
+    second: colony-other-ready_74
+  - first:
+      213: -4888729903898307690
+    second: colony-other-ready_75
+  - first:
+      213: -8454103040414049956
+    second: colony-other-ready_76
+  - first:
+      213: -1814917835140187250
+    second: colony-other-ready_77
+  - first:
+      213: -3835701720085289888
+    second: colony-other-ready_78
+  - first:
+      213: 3257814355620466409
+    second: colony-other-ready_79
+  - first:
+      213: 67677102417637123
+    second: colony-other-ready_80
+  - first:
+      213: -4161133435720803528
+    second: colony-other-ready_81
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: colony-other-ready_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1007
+        width: 119
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c60a42b245d3340800000000000000
+      internalID: 4845121318395341872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1016
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7eb47e0f07c7aa50800000000000000
+      internalID: 6532408652005162620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_2
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 972
+        width: 113
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a6f5cdcaf813ab80800000000000000
+      internalID: -8384830615760537949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_3
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1020
+        width: 54
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b08163edf6d882e0800000000000000
+      internalID: -2123210838375300937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_4
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1020
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85264fd21adac64a0800000000000000
+      internalID: -6598708446232288680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 831
+        width: 177
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81879e20cc2361550800000000000000
+      internalID: 6131143794515081240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_6
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 984
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ff67b80cf066740800000000000000
+      internalID: 5144816943965339397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_7
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 927
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db0765795eb9c70c0800000000000000
+      internalID: -4576611710926425923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_8
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 927
+        width: 6
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4773f53c70b0f9480800000000000000
+      internalID: -8890375011435595916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_9
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 950
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96eaed563148109d0800000000000000
+      internalID: -2809819473654141335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_10
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 943
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c8a72641b1b9e40800000000000000
+      internalID: 5664150730714025095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_11
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 926
+        width: 46
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cc8ef850d6cf1860800000000000000
+      internalID: 7502934102371110083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_12
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 905
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37cb0c194392e31b0800000000000000
+      internalID: -5675053174679880589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_13
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 911
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feedc74a4cab7fd60800000000000000
+      internalID: 7924007423117680367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_14
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 864
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae139fd50bd023990800000000000000
+      internalID: -7407843385929027094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_15
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 881
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebbc5cdd0e0d626c0800000000000000
+      internalID: -4168414740872836162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_16
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 852
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ddfd134f7b20dbc0800000000000000
+      internalID: -3760457863267484201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_17
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 864
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4f737a677120d360800000000000000
+      internalID: 7192285401681461067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_18
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 872
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92827ba0dc54ffeb0800000000000000
+      internalID: -4683948340491638743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_19
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 838
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cee64d4922c4b7330800000000000000
+      internalID: 3709642429479284460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_20
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 853
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 683d8df49c52663d0800000000000000
+      internalID: -3213839737524006010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_21
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 833
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf06fc6ad9d00e80800000000000000
+      internalID: -8214326188169621556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_22
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 853
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcdf1de72bdaf4d90800000000000000
+      internalID: -7111274304451248693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_23
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 832
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad19bdadd6b2d4e0800000000000000
+      internalID: -1958301824734126687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_24
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 834
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab667d5f04bca260800000000000000
+      internalID: 7110255889796721572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 853
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd9b7189d74971e50800000000000000
+      internalID: 6780051031173085663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_26
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 854
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8af982b3745f8550800000000000000
+      internalID: 6165239270786857610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 799
+        width: 119
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 167858d83e2105ba0800000000000000
+      internalID: -6102356726545807519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_28
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 808
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d033fbe374df3d850800000000000000
+      internalID: 6400737977860829965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_29
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 764
+        width: 113
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39c4c2c41b3d5e430800000000000000
+      internalID: 3811685418079636627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_30
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 812
+        width: 54
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc44e696db3783370800000000000000
+      internalID: 8302513170412356812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_31
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 812
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0791f81d7a114b210800000000000000
+      internalID: 1347721600963647856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 623
+        width: 177
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba73220cc5ebf32f0800000000000000
+      internalID: -990864087428483157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_33
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 776
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b73310adbe8b9e60800000000000000
+      internalID: 7970120910647801778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_34
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 719
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc9c371dc399f3a20800000000000000
+      internalID: 3044320359616858573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_35
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 719
+        width: 6
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22812517ec69b5b50800000000000000
+      internalID: 6583021093740746786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_36
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 742
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e03012bbcf21ed940800000000000000
+      internalID: 5322712686279066382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_37
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 735
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d756c13e341c230800000000000000
+      internalID: 3657279015114603792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_38
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 718
+        width: 46
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b22c8de85c7af90800000000000000
+      internalID: -6942363083255698576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_39
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 697
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dc466fa69d1e6350800000000000000
+      internalID: 6011775085611207893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_40
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 703
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf35b4f895193cab0800000000000000
+      internalID: -4988984148354182149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_41
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 656
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6340c609561b85a0800000000000000
+      internalID: -6518091464067497105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_42
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 673
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9067b9e3a8526b010800000000000000
+      internalID: 1204191226054276617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_43
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 644
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9602aa2ddd6dd7350800000000000000
+      internalID: 6016200925447331945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_44
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 656
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 544bb59b70fdc7290800000000000000
+      internalID: -7891187222792391611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_45
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 664
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80760d66e01bb6c40800000000000000
+      internalID: 5506689644803155720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_46
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 630
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec2839207e9b68740800000000000000
+      internalID: 5154011225403917006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_47
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 645
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0f2dc85e4e942d90800000000000000
+      internalID: -7123394651258802420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_48
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 625
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7c53e90c30c1300800000000000000
+      internalID: 224058207284611046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_49
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 645
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dcfb8c16945f5a30800000000000000
+      internalID: 4206173580688096470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_50
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 624
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6684c9af7a03c25d0800000000000000
+      internalID: -3086038146633414554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_51
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 626
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 731d9dea97226faa0800000000000000
+      internalID: -6127672336971083465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_52
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 645
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697774dc5c5968410800000000000000
+      internalID: 1479034204422895510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_53
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 646
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a13a68108b20a22b0800000000000000
+      internalID: -5608667396613692646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_54
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 623
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d2e891af1c292fc0800000000000000
+      internalID: -3519233119446572328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 591
+        width: 119
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c622bc7cb86f5d930800000000000000
+      internalID: 4167508110414127724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_56
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 600
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee066f26ff86098e0800000000000000
+      internalID: -1688734414177672978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 161
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1bc9b22f0478ebf0800000000000000
+      internalID: -294858167236834532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_58
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 568
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a64517d3c3d57d700800000000000000
+      internalID: 565022791568544874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 383
+        width: 119
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952ea41a235989d50800000000000000
+      internalID: 6744304486674260569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_60
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 392
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2ded463b22b5df0800000000000000
+      internalID: -190520405346299171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 207
+        width: 161
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9acc9c1fe59741af0800000000000000
+      internalID: -426582616002933591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_62
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 360
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61202006ebf877fd0800000000000000
+      internalID: -2344247033205751274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_63
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 240
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa7db6500371ad5e0800000000000000
+      internalID: -1884167999084308561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_64
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 240
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 059fc69e470c01d90800000000000000
+      internalID: -7128986601762522800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_65
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 257
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14ccfc31f63d57880800000000000000
+      internalID: -8613746238248989631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_66
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 228
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0dde32d082647020800000000000000
+      internalID: 2338602411934801166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_67
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 240
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2f6bc11ca5aa07e0800000000000000
+      internalID: -1798442942729588946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_68
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 248
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d178c1151f2f1ef0800000000000000
+      internalID: -135337696258657836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_69
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 214
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efcf75da67e5b5cc0800000000000000
+      internalID: -3721276803284206338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_70
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 229
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 356e9a6a3f9c59330800000000000000
+      internalID: 3717099115774600787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_71
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 209
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0596437bdf777d190800000000000000
+      internalID: -7937743886633113264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_72
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 229
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281994590aaf89840800000000000000
+      internalID: 5231206534797169026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_73
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 208
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71666c9f853200720800000000000000
+      internalID: 2810285032533812759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_74
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 210
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6fae5c9945b629f0800000000000000
+      internalID: -493507781389799569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_75
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 229
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693df43dd0eb72cb0800000000000000
+      internalID: -4888729903898307690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_76
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 230
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c591295931efcaa80800000000000000
+      internalID: -8454103040414049956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_77
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 207
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8bb2f348dd10d6e0800000000000000
+      internalID: -1814917835140187250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 175
+        width: 119
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06426f5ab99d4cac0800000000000000
+      internalID: -3835701720085289888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_79
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 184
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ee0de255e4163d20800000000000000
+      internalID: 3257814355620466409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 161
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30fe70157ff60f000800000000000000
+      internalID: 67677102417637123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colony-other-ready_81
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 152
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b5cd4df2fa046c0800000000000000
+      internalID: -4161133435720803528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      colony-other-ready_0: 4845121318395341872
+      colony-other-ready_1: 6532408652005162620
+      colony-other-ready_10: 5664150730714025095
+      colony-other-ready_11: 7502934102371110083
+      colony-other-ready_12: -5675053174679880589
+      colony-other-ready_13: 7924007423117680367
+      colony-other-ready_14: -7407843385929027094
+      colony-other-ready_15: -4168414740872836162
+      colony-other-ready_16: -3760457863267484201
+      colony-other-ready_17: 7192285401681461067
+      colony-other-ready_18: -4683948340491638743
+      colony-other-ready_19: 3709642429479284460
+      colony-other-ready_2: -8384830615760537949
+      colony-other-ready_20: -3213839737524006010
+      colony-other-ready_21: -8214326188169621556
+      colony-other-ready_22: -7111274304451248693
+      colony-other-ready_23: -1958301824734126687
+      colony-other-ready_24: 7110255889796721572
+      colony-other-ready_25: 6780051031173085663
+      colony-other-ready_26: 6165239270786857610
+      colony-other-ready_27: -6102356726545807519
+      colony-other-ready_28: 6400737977860829965
+      colony-other-ready_29: 3811685418079636627
+      colony-other-ready_3: -2123210838375300937
+      colony-other-ready_30: 8302513170412356812
+      colony-other-ready_31: 1347721600963647856
+      colony-other-ready_32: -990864087428483157
+      colony-other-ready_33: 7970120910647801778
+      colony-other-ready_34: 3044320359616858573
+      colony-other-ready_35: 6583021093740746786
+      colony-other-ready_36: 5322712686279066382
+      colony-other-ready_37: 3657279015114603792
+      colony-other-ready_38: -6942363083255698576
+      colony-other-ready_39: 6011775085611207893
+      colony-other-ready_4: -6598708446232288680
+      colony-other-ready_40: -4988984148354182149
+      colony-other-ready_41: -6518091464067497105
+      colony-other-ready_42: 1204191226054276617
+      colony-other-ready_43: 6016200925447331945
+      colony-other-ready_44: -7891187222792391611
+      colony-other-ready_45: 5506689644803155720
+      colony-other-ready_46: 5154011225403917006
+      colony-other-ready_47: -7123394651258802420
+      colony-other-ready_48: 224058207284611046
+      colony-other-ready_49: 4206173580688096470
+      colony-other-ready_5: 6131143794515081240
+      colony-other-ready_50: -3086038146633414554
+      colony-other-ready_51: -6127672336971083465
+      colony-other-ready_52: 1479034204422895510
+      colony-other-ready_53: -5608667396613692646
+      colony-other-ready_54: -3519233119446572328
+      colony-other-ready_55: 4167508110414127724
+      colony-other-ready_56: -1688734414177672978
+      colony-other-ready_57: -294858167236834532
+      colony-other-ready_58: 565022791568544874
+      colony-other-ready_59: 6744304486674260569
+      colony-other-ready_6: 5144816943965339397
+      colony-other-ready_60: -190520405346299171
+      colony-other-ready_61: -426582616002933591
+      colony-other-ready_62: -2344247033205751274
+      colony-other-ready_63: -1884167999084308561
+      colony-other-ready_64: -7128986601762522800
+      colony-other-ready_65: -8613746238248989631
+      colony-other-ready_66: 2338602411934801166
+      colony-other-ready_67: -1798442942729588946
+      colony-other-ready_68: -135337696258657836
+      colony-other-ready_69: -3721276803284206338
+      colony-other-ready_7: -4576611710926425923
+      colony-other-ready_70: 3717099115774600787
+      colony-other-ready_71: -7937743886633113264
+      colony-other-ready_72: 5231206534797169026
+      colony-other-ready_73: 2810285032533812759
+      colony-other-ready_74: -493507781389799569
+      colony-other-ready_75: -4888729903898307690
+      colony-other-ready_76: -8454103040414049956
+      colony-other-ready_77: -1814917835140187250
+      colony-other-ready_78: -3835701720085289888
+      colony-other-ready_79: 3257814355620466409
+      colony-other-ready_8: -8890375011435595916
+      colony-other-ready_80: 67677102417637123
+      colony-other-ready_81: -4161133435720803528
+      colony-other-ready_9: -2809819473654141335
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
