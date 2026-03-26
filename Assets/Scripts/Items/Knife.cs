@@ -45,6 +45,13 @@ public class Knife : EquippableItem
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.CompareTag("Enemy"))
+        {
+            Enemy e = other.GetComponent<Enemy>();
+            if (e != null)
+            {
+                e.takeDmg(dmg);
+            }
+        }
     }
 }
