@@ -9,6 +9,9 @@ public class TimeManager : MonoBehaviour
     public float realSecondsPerTick = 10f;
     public int minutesPerTick = 10;
 
+        [Header("Pause Settings")]
+    public bool timePaused = false;
+
     [Header("Starting Time")]
     public int startDay = 1;
     public int startHour = 8;
@@ -45,6 +48,8 @@ public class TimeManager : MonoBehaviour
     }
 
     private void Update(){
+
+        if (timePaused) return;
 
         timer += Time.deltaTime;
 
@@ -113,5 +118,20 @@ public class TimeManager : MonoBehaviour
         currentMinute = Mathf.Clamp(minute, 0, 59);
 
         NotifyTimeChanged();
+    }
+
+    public void PauseTime(){
+
+        timePaused = true;
+    }
+
+    public void ResumeTime(){
+
+        timePaused = false;
+    }
+
+    public void SetTimePaused(bool paused){
+        
+        timePaused = paused;
     }
 }
