@@ -14,10 +14,10 @@ GameObject:
   - component: {fileID: 5492924888471199392}
   - component: {fileID: 8871196454651515004}
   - component: {fileID: 2181229365479328443}
-  - component: {fileID: 151986337015390283}
+  - component: {fileID: 3122139690064024760}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_DefaultActionMap: 
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &151986337015390283
+--- !u!114 &3122139690064024760
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -214,50 +214,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 723298425094645640}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Script: {fileID: 11500000, guid: 0250411edd50e954fa31479a96564dba, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.ShadowCaster2D
-  m_ShadowGroup: 0
-  m_Priority: 4
-  m_ComponentVersion: 5
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 000000008dc03119
-  m_ShapePath:
-  - {x: -0.5, y: -0.49999905, z: 0}
-  - {x: -0.5, y: 0.50000095, z: 0}
-  - {x: 0.5000076, y: 0.50000095, z: 0}
-  - {x: 0.5000076, y: -0.49999905, z: 0}
-  m_ShapePathHash: 0
-  m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 800603959576155651}
-  m_ShadowShape2DProvider:
-    rid: 7897721789474668622
-  m_ShadowCastingSource: 2
-  m_ShadowMesh:
-    m_Mesh: {fileID: 0}
-    m_LocalBounds:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.3999939, y: 0.3999939, z: 0}
-    m_EdgeProcessing: 1
-    m_TrimEdge: 0.1
-    m_FlipX: 0
-    m_FlipY: 0
-    m_InitialTrim: 0.1
-  m_CastingOption: 1
-  m_PreviousTrimEdge: 0.1
-  m_PreviousEdgeProcessing: 1
-  m_PreviousShadowCastingSource: 2
-  m_PreviousShadowShape2DSource: {fileID: 800603959576155651}
-  references:
-    version: 2
-    RefIds:
-    - rid: 7897721789474668622
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
-      data: 
+  m_EditorClassIdentifier: Assembly-CSharp::OxygenManager
+  maxOxygen: 100
+  currentOxygen: 0
+  oxygenDrainRate: 5
+  oxygenRefillRate: 20
+  isHelmetOn: 1
+  safeSceneName: SampleScene
 --- !u!1 &1744815510419774425
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,8 +295,8 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 20
   m_PointLightOuterAngle: 60
-  m_PointLightInnerRadius: 3.52
-  m_PointLightOuterRadius: 26.9
+  m_PointLightInnerRadius: 14
+  m_PointLightOuterRadius: 45
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -394,7 +359,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 000000008dc03119
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
