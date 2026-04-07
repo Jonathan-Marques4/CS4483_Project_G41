@@ -134,4 +134,23 @@ public class TimeManager : MonoBehaviour
         
         timePaused = paused;
     }
+
+
+    public void AdvanceHours(int hoursToAdd){
+        
+        if (hoursToAdd <= 0) return;
+
+        currentHour += hoursToAdd;
+
+        while (currentHour >= 24){
+
+            currentHour -= 24;
+            currentDay++;
+            OnDayChanged?.Invoke();
+        }
+
+
+        NotifyTimeChanged();
+    }
+
 }
