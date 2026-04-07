@@ -1,74 +1,64 @@
 using UnityEngine;
 using System.Collections;
+
 public class Enemy : MonoBehaviour
 {
-    private GameObject player;
-    private Rigidbody2D rb;
-    private float dmg;
-    private bool attacking;
-    private float healthMax;
-    private float health;
+    [SerializeField] private float dmg = 10f;
+    [SerializeField] private float attackRange = 1.5f;
+    [SerializeField] private float attackCooldown = 1f;
 
-    private float moveSpeed = 5f;
+    private HealthComponent healthComp;
+    private HealthComponent playerHealth;
+    private Transform playerTransform;
 
+    private bool attacking = false;
     private bool hitProtect = false;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
-        attacking = false;
-        player = GameObject.FindGameObjectWithTag("Player");
-        rb = GetComponent<Rigidbody2D>();
-        healthMax = 50f;
-        health = healthMax;
-    }
+        healthComp = GetComponent<HealthComponent>();
+        if (healthComp != null)
+            healthComp.OnDeath += () => Destroy(gameObject);
 
-    // Update is called once per frame
-    void Update()
-    {
-            Vector2 playerDir = (player.transform.position - transform.position).normalized;
-            rb.linearVelocity = playerDir * moveSpeed ;
-    }
-
-    void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
+        var player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
         {
-            if (!attacking)
-            {
-                Debug.Log("Attacking Player");
-                StartCoroutine(attack());
-            }
+            playerTransform = player.transform;
+            playerHealth = player.GetComponent<HealthComponent>();
         }
     }
 
-    private IEnumerator attack()
+    void Update()
+    {
+        if (playerTransform == null) return;
+
+        float dist = Vector2.Distance(transform.position, playerTransform.position);
+        if (dist <= attackRange && !attacking)
+            StartCoroutine(Attack());
+    }
+
+    private IEnumerator Attack()
     {
         attacking = true;
-        PlayerStats.Instance.takeDmg(dmg);
-        yield return new WaitForSeconds(1f);
+        if (playerHealth != null)
+            playerHealth.TakeDamage(dmg);
+        yield return new WaitForSeconds(attackCooldown);
         attacking = false;
     }
 
-    private IEnumerator hitProtection()
+    private IEnumerator HitProtection()
     {
         hitProtect = true;
-        moveSpeed = 0;
+        var rb = GetComponent<Rigidbody2D>();
+        if (rb != null) rb.linearVelocity = Vector2.zero;
         yield return new WaitForSeconds(0.15f);
-        moveSpeed = 5;
         hitProtect = false;
     }
 
-    public void takeDmg(float dmg)
+    public void TakeDamage(float amount)
     {
-        if (!hitProtect)
-        {
-            health -= dmg;
-            Debug.Log("Health:" + health + "/" + healthMax);
-            StartCoroutine(hitProtection());
-        }
-        if (health <= 0)
-        {
-            Destroy(gameObject);
-        }
+        if (hitProtect || healthComp == null) return;
+        healthComp.TakeDamage(amount);
+        StartCoroutine(HitProtection());
     }
 }

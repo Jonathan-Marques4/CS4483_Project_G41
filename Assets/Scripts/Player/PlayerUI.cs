@@ -1,16 +1,20 @@
 using UnityEngine;
 using TMPro;
+
 public class PlayerUI : MonoBehaviour
 {
     public TextMeshProUGUI text;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private HealthComponent playerHealth;
 
-    // Update is called once per frame
+    void Start()
+    {
+        if (PlayerStats.Instance != null)
+            playerHealth = PlayerStats.Instance.Health;
+    }
+
     void Update()
     {
-        if (text != null)
-        {
-            text.text = "HP: " + PlayerStats.Instance.currentHp + "/" + PlayerStats.Instance.maxHp;
-        }
+        if (text != null && playerHealth != null)
+            text.text = "HP: " + playerHealth.CurrentHealth + "/" + playerHealth.MaxHealth;
     }
 }

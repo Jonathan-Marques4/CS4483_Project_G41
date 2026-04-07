@@ -50,7 +50,7 @@ public class Knife : EquippableItem
             Enemy e = other.GetComponent<Enemy>();
             if (e != null)
             {
-                e.takeDmg(dmg);
+                e.TakeDamage(dmg);
             }
         }
     }
