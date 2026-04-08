@@ -1,56 +1,62 @@
 using UnityEngine;
 
-public class InventoryClickController : MonoBehaviour{
-    
+public class InventoryClickController : MonoBehaviour
+{
     public InventorySlotUI[] allSlots;
 
     private int selectedSlotIndex = -1;
 
-    public void OnSlotClicked(int clickedIndex){
+    public void OnSlotClicked(int clickedIndex)
+    {
+        // If chest is open, clicking any player slot (including top hotbar 0-6)
+        // moves it into the chest
+        if (ChestUI.Instance != null && ChestUI.Instance.IsChestOpen())
+        {
+            if (ChestTransferController.Instance != null)
+            {
+                ChestTransferController.Instance.OnPlayerInventorySlotClicked(clickedIndex);
+            }
+            return;
+        }
 
+        // Normal inventory move/swap logic
         if (InventoryManager.Instance == null) return;
         if (clickedIndex < 0 || clickedIndex >= InventoryManager.Instance.slots.Count) return;
 
-        // First click: pick a slot
-        if (selectedSlotIndex == -1){
-
-            if (!InventoryManager.Instance.slots[clickedIndex].IsEmpty()){
-
+        if (selectedSlotIndex == -1)
+        {
+            if (!InventoryManager.Instance.slots[clickedIndex].IsEmpty())
+            {
                 selectedSlotIndex = clickedIndex;
                 RefreshClickHighlights();
             }
             return;
         }
 
-        // Clicking same slot again cancels selection
-        if (selectedSlotIndex == clickedIndex){
+        if (selectedSlotIndex == clickedIndex)
+        {
             selectedSlotIndex = -1;
             RefreshClickHighlights();
             return;
         }
 
-        // Second click: swap/move
         InventoryManager.Instance.SwapSlots(selectedSlotIndex, clickedIndex);
-
         selectedSlotIndex = -1;
         RefreshClickHighlights();
     }
 
-    public void RefreshClickHighlights(){
-        if (allSlots == null) return;
+    public void RefreshClickHighlights()
+    {
+        if (allSlots == null || InventoryManager.Instance == null) return;
 
-        for (int i = 0; i < allSlots.Length; i++){
+        for (int i = 0; i < allSlots.Length; i++)
+        {
+            if (allSlots[i] == null || allSlots[i].selectionHighlight == null) continue;
 
-            bool isSelectedForMove = (i == selectedSlotIndex);
+            bool moveSelected = (i == selectedSlotIndex);
+            bool hotbarSelected = (i < InventoryManager.HotbarSize && i == InventoryManager.Instance.selectedHotbarIndex);
 
-            // optional: add separate click highlight later, add it here
-            if (allSlots[i].selectionHighlight != null){
-                bool hotbarSelected = InventoryManager.Instance != null &&
-                                      i == InventoryManager.Instance.selectedHotbarIndex &&
-                                      i < InventoryManager.HotbarSize;
-
-                allSlots[i].selectionHighlight.SetActive(isSelectedForMove || hotbarSelected);
-            }
+            allSlots[i].selectionHighlight.SetActive(moveSelected || hotbarSelected);
         }
     }
 }

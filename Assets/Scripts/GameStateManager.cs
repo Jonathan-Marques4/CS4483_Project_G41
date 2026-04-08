@@ -25,6 +25,9 @@ public class GameStateManager : MonoBehaviour
 
         if (SleepPromptUI.Instance != null && SleepPromptUI.Instance.IsPromptOpen())
             return true;
+        
+        if (ChestUI.Instance != null && ChestUI.Instance.IsChestOpen())
+            return true;
 
         return false;
     }
