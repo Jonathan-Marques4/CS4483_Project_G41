@@ -29,8 +29,8 @@ public class CropItemDebugTester : MonoBehaviour
                 return;
             }
 
-            bool success = InventoryManager.Instance.AddItem(strawberrySeeds, 5);
-            Debug.Log("Tried adding Strawberry Seeds, success = " + success);
+            //bool success = InventoryManager.Instance.AddItem(strawberrySeeds, 5);
+            //Debug.Log("Tried adding Strawberry Seeds, success = " + success);
         }
 
         if (Input.GetKeyDown(KeyCode.F2))
@@ -49,8 +49,8 @@ public class CropItemDebugTester : MonoBehaviour
                 return;
             }
 
-            bool success = InventoryManager.Instance.AddItem(strawberry, 3);
-            Debug.Log("Tried adding Strawberry, success = " + success);
+            //bool success = InventoryManager.Instance.AddItem(strawberry, 3);
+            //Debug.Log("Tried adding Strawberry, success = " + success);
         }
 
         if (Input.GetKeyDown(KeyCode.F3))
@@ -69,8 +69,8 @@ public class CropItemDebugTester : MonoBehaviour
                 return;
             }
 
-            bool success = InventoryManager.Instance.AddItem(potatoSeeds, 5);
-            Debug.Log("Tried adding Potato Seeds, success = " + success);
+            //bool success = InventoryManager.Instance.AddItem(potatoSeeds, 5);
+            //Debug.Log("Tried adding Potato Seeds, success = " + success);
         }
 
         if (Input.GetKeyDown(KeyCode.F4))
@@ -89,8 +89,8 @@ public class CropItemDebugTester : MonoBehaviour
                 return;
             }
 
-            bool success = InventoryManager.Instance.AddItem(potato, 3);
-            Debug.Log("Tried adding Potato, success = " + success);
+            //bool success = InventoryManager.Instance.AddItem(potato, 3);
+            //Debug.Log("Tried adding Potato, success = " + success);
         }
     }
 }
