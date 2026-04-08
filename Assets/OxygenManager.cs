@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement; 
+using UnityEngine.UI;
 
 public class OxygenManager : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class OxygenManager : MonoBehaviour
     [Header("Environment Settings")]
     public bool isHelmetOn = false;
     public string safeSceneName = "SampleScene"; 
+
+    [Header("UI Settings")]
+    public GameObject oxygenUIContainer; 
+    public Image oxygenBarFill;
 
     void Start()
     {
@@ -37,12 +42,12 @@ public class OxygenManager : MonoBehaviour
         if (scene.name == safeSceneName)
         {
             isHelmetOn = false;
-            Debug.Log("Entered Base: Helmet Off. Oxygen refilling.");
+            if (oxygenUIContainer != null) oxygenUIContainer.SetActive(false); 
         }
         else
         {
             isHelmetOn = true;
-            Debug.Log("Entered Space: Helmet On! Oxygen draining.");
+            if (oxygenUIContainer != null) oxygenUIContainer.SetActive(true); 
         }
     }
 
@@ -68,6 +73,12 @@ public class OxygenManager : MonoBehaviour
             
             // Keep it from exceeding the maximum limit
             currentOxygen = Mathf.Min(currentOxygen, maxOxygen);
+        }
+
+            if (oxygenBarFill != null)
+        {
+            
+            oxygenBarFill.fillAmount = currentOxygen / maxOxygen; 
         }
     }
 
