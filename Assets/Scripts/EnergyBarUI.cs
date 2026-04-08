@@ -39,7 +39,7 @@ public class EnergyBarUI : MonoBehaviour
 
         if (energyText != null){
 
-            energyText.text = $"{PlayerEnergy.Instance.currentEnergy}/{PlayerEnergy.Instance.maxEnergy}";
+            energyText.text = "Energy: " + $"{PlayerEnergy.Instance.currentEnergy}/{PlayerEnergy.Instance.maxEnergy}";
         }
     }
 }

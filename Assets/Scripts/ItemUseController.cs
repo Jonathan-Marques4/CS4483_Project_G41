@@ -27,6 +27,8 @@ public class ItemUseController : MonoBehaviour
         Vector2 mouseWorldPos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hit = Physics2D.Raycast(mouseWorldPos, Vector2.zero);
 
+
+
         // 1. Bed click
         if (hit.collider != null)
         {
@@ -45,6 +47,24 @@ public class ItemUseController : MonoBehaviour
                     Debug.Log("Too far away from bed.");
                 }
 
+                return;
+            }
+        }
+
+        // Chest click
+        if (hit.collider != null)
+        {
+            ChestInteraction chest = hit.collider.GetComponent<ChestInteraction>();
+            if (chest != null)
+            {
+                if (chest.IsPlayerInRange(transform))
+                {
+                    chest.OpenChest();
+                }
+                else
+                {
+                    Debug.Log("Too far away from chest.");
+                }
                 return;
             }
         }

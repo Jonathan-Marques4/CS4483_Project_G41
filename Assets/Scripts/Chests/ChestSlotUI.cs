@@ -1,18 +1,16 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.EventSystems;
 
-public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
+public class ChestSlotUI : MonoBehaviour, IPointerClickHandler
 {
     public Image iconImage;
     public TextMeshProUGUI quantityText;
-    public GameObject selectionHighlight;
 
     [HideInInspector] public int slotIndex;
-    [HideInInspector] public InventoryClickController clickController;
 
-    public void SetSlot(InventorySlot slot, bool selected = false)
+    public void SetSlot(InventorySlot slot)
     {
         if (slot != null && !slot.IsEmpty())
         {
@@ -26,18 +24,19 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
             iconImage.sprite = null;
             quantityText.text = "";
         }
-
-        if (selectionHighlight != null)
-        {
-            selectionHighlight.SetActive(selected);
-        }
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (clickController != null)
+        Debug.Log("Clicked chest slot " + slotIndex);
+
+        if (ChestTransferController.Instance != null)
         {
-            clickController.OnSlotClicked(slotIndex);
+            ChestTransferController.Instance.OnChestSlotClicked(slotIndex);
+        }
+        else
+        {
+            Debug.LogError("ChestTransferController.Instance is null");
         }
     }
 }
