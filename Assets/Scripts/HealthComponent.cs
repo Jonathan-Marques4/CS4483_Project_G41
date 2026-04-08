@@ -23,9 +23,12 @@ public class HealthComponent : MonoBehaviour
     public void TakeDamage(float amount)
     {
         if (!IsAlive) return;
+
         float actual = Mathf.Max(1f, amount - armor);
         CurrentHealth = Mathf.Max(0f, CurrentHealth - actual);
+
         OnDamaged?.Invoke(actual);
+
         if (CurrentHealth <= 0f)
             OnDeath?.Invoke();
     }
@@ -38,9 +41,15 @@ public class HealthComponent : MonoBehaviour
         OnHealed?.Invoke(actual);
     }
 
-    public void SetMaxHealth(float newMax, bool refillToMax = false)
+    // ==================== TEST METHODS ====================
+    // Remove these later if you want
+    public void TestDamage()
     {
-        maxHealth = Mathf.Max(1f, newMax);
-        CurrentHealth = refillToMax ? maxHealth : Mathf.Min(CurrentHealth, maxHealth);
+        TakeDamage(25f);
+    }
+
+    public void TestHeal()
+    {
+        Heal(25f);
     }
 }
