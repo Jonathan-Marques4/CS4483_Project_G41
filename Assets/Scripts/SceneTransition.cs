@@ -39,6 +39,8 @@ public class SceneTransition : MonoBehaviour
 
     public void Transition()
     {
+        Debug.Log("Transitioning to scene: " + targetSceneName + " with spawn ID: " + targetSpawnID);
+
         if (GameStateManager.Instance != null && GameStateManager.Instance.IsGameplayBlocked())
             return;
 

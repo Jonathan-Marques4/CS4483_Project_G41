@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
@@ -14,6 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CaveArea1.unity
     guid: aa9a346c84f259740a55ba9ee9f13d45
+  - enabled: 1
+    path: Assets/Scenes/CaveArea2.unity
+    guid: 871f0c962db92dc48b1fd0bb49b5ee0c
+  - enabled: 1
+    path: Assets/Scenes/CaveArea3.unity
+    guid: c3ff852ac3e6fcf4fbae3764d7330ec8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -4324,12 +4324,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582350841}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.57955, y: -4.02244, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1757626412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &586689089
 GameObject:
@@ -4667,7 +4667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleTopDownAnimator
   rb: {fileID: 604584571}
-  moveSpeed: 4
+  moveSpeed: 12
   animator: {fileID: 1285115098}
   spriteRenderer: {fileID: 1285115099}
 --- !u!114 &604584576
@@ -18831,7 +18831,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -204249579
-  m_SortingLayer: 4
+  m_SortingLayer: 2
   m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 1f2b808deed244e18d31ba3c25ad903b, type: 3}
@@ -20707,7 +20707,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 24.9, y: -3.97, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -20922,7 +20922,7 @@ Transform:
   m_GameObject: {fileID: 1506713134}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.75, y: -4.1, z: 0}
+  m_LocalPosition: {x: 23.41, y: -4.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23897,6 +23897,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1757626412}
+  - component: {fileID: 1757626413}
   m_Layer: 0
   m_Name: PersistentSystems
   m_TagString: Untagged
@@ -23924,9 +23925,22 @@ Transform:
   - {fileID: 1893010710}
   - {fileID: 1819120864}
   - {fileID: 1800436944}
+  - {fileID: 582350844}
   - {fileID: 1091311949}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1757626413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757626411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdabd5696c66e864aa9ac8dedd68a084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PersistentSystemsRoot
 --- !u!1 &1759572962
 GameObject:
   m_ObjectHideFlags: 0
@@ -40740,7 +40754,6 @@ SceneRoots:
   - {fileID: 1542581638}
   - {fileID: 604584572}
   - {fileID: 308687929}
-  - {fileID: 582350844}
   - {fileID: 1757626412}
   - {fileID: 850529578}
   - {fileID: 262433836}
