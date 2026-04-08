@@ -4557,6 +4557,7 @@ GameObject:
   - component: {fileID: 604584575}
   - component: {fileID: 604584576}
   - component: {fileID: 604584577}
+  - component: {fileID: 604584578}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4699,6 +4700,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemUseController
   playerPlanting: {fileID: 604584576}
   mainCamera: {fileID: 0}
+--- !u!114 &604584578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604584569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0250411edd50e954fa31479a96564dba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OxygenManager
+  maxOxygen: 100
+  currentOxygen: 0
+  oxygenDrainRate: 5
+  oxygenRefillRate: 20
+  isHelmetOn: 0
+  safeSceneName: SpawnArea
 --- !u!1 &613226078
 GameObject:
   m_ObjectHideFlags: 0
@@ -18818,7 +18837,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -204249579
-  m_SortingLayer: 2
+  m_SortingLayer: 4
   m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 1f2b808deed244e18d31ba3c25ad903b, type: 3}
