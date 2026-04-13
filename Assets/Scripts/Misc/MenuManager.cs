@@ -15,7 +15,13 @@ public class MenuManager : MonoBehaviour
 
     private bool menuOpen = false;
 
-    private void Awake(){
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
 
         Instance = this;
     }
