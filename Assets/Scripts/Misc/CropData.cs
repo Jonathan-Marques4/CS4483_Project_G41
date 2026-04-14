@@ -20,4 +20,7 @@ public class CropData : ScriptableObject{
 
     [Header("Harvest")]
     public int harvestAmount = 1;
+
+    [Header("XP Rewards")]
+    public int harvestXP = 10;
 }

@@ -19,5 +19,6 @@ MonoBehaviour:
   stage0SeedSprite: {fileID: 8369948372191450990, guid: 4a26733808617e14280affe4cf0f2cab, type: 3}
   stage1MidSprite: {fileID: 240733362411572873, guid: 4a26733808617e14280affe4cf0f2cab, type: 3}
   stage2FullSprite: {fileID: 8578180459406042070, guid: 4a26733808617e14280affe4cf0f2cab, type: 3}
-  totalGrowthDays: 3
+  totalGrowthDays: 2
   harvestAmount: 5
+  harvestXP: 4

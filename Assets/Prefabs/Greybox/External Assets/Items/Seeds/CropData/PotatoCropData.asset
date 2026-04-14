@@ -21,3 +21,4 @@ MonoBehaviour:
   stage2FullSprite: {fileID: -5752873257389657301, guid: 4a26733808617e14280affe4cf0f2cab, type: 3}
   totalGrowthDays: 1
   harvestAmount: 5
+  harvestXP: 2

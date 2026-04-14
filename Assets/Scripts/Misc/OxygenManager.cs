@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class OxygenManager : MonoBehaviour
 {
+    public static OxygenManager Instance;
+
     [Header("Oxygen Settings")]
     public float maxOxygen = 100f;
     public float currentOxygen;
@@ -17,6 +19,19 @@ public class OxygenManager : MonoBehaviour
     [Header("UI Settings")]
     public GameObject oxygenUIContainer; 
     public Image oxygenBarFill;
+
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
 
     void Start()
     {
