@@ -2583,6 +2583,7 @@ MonoBehaviour:
   dmg: 10
   attackRange: 1.2
   attackCooldown: 1
+  xpReward: 5
 --- !u!114 &758800394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2936,6 +2937,8 @@ GameObject:
   - component: {fileID: 886414312}
   - component: {fileID: 886414311}
   - component: {fileID: 886414310}
+  - component: {fileID: 886414316}
+  - component: {fileID: 886414317}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Untagged
@@ -3131,6 +3134,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &886414316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886414309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041754267e661cb44949b5ccc017be22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PersistentObjectID
+  objectID: CaveArea1_Chest1
+--- !u!114 &886414317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886414309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4277a84ab722bb4e9a27f18c886bbc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChestStateHandler
 --- !u!1 &1180145865
 GameObject:
   m_ObjectHideFlags: 0
@@ -4819,6 +4847,7 @@ MonoBehaviour:
   dmg: 10
   attackRange: 1.2
   attackCooldown: 1
+  xpReward: 5
 --- !u!114 &1768864488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5033,6 +5062,7 @@ MonoBehaviour:
   dmg: 10
   attackRange: 1.2
   attackCooldown: 1
+  xpReward: 5
 --- !u!114 &1837913912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10667,6 +10697,7 @@ MonoBehaviour:
   dmg: 10
   attackRange: 1.2
   attackCooldown: 1
+  xpReward: 5
 --- !u!114 &1944146796
 MonoBehaviour:
   m_ObjectHideFlags: 0

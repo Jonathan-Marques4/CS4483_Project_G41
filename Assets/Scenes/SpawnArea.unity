@@ -355,6 +355,8 @@ GameObject:
   - component: {fileID: 22823942}
   - component: {fileID: 22823944}
   - component: {fileID: 22823943}
+  - component: {fileID: 22823945}
+  - component: {fileID: 22823946}
   m_Layer: 0
   m_Name: FarmTile7
   m_TagString: Untagged
@@ -440,6 +442,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &22823945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22823941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041754267e661cb44949b5ccc017be22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PersistentObjectID
+  objectID: Farm_Tile7
+--- !u!114 &22823946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22823941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d70c0726a437f4eb2b5d5b69c5264c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FarmTileStateHandler
+  cropPlantPrefab: {fileID: 1052015389745415763, guid: 82438fad98a9e4f4d9ff6e03af5a135b, type: 3}
 --- !u!1 &31256593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,6 +1106,8 @@ GameObject:
   - component: {fileID: 151926705}
   - component: {fileID: 151926707}
   - component: {fileID: 151926706}
+  - component: {fileID: 151926708}
+  - component: {fileID: 151926709}
   m_Layer: 0
   m_Name: FarmTile8
   m_TagString: Untagged
@@ -1163,6 +1193,81 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &151926708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151926704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041754267e661cb44949b5ccc017be22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PersistentObjectID
+  objectID: Farm_Tile8
+--- !u!114 &151926709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151926704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d70c0726a437f4eb2b5d5b69c5264c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FarmTileStateHandler
+  cropPlantPrefab: {fileID: 1052015389745415763, guid: 82438fad98a9e4f4d9ff6e03af5a135b, type: 3}
+--- !u!1 &161526216
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 161526217}
+  - component: {fileID: 161526218}
+  m_Layer: 0
+  m_Name: CropDataBase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &161526217
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161526216}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1757626412}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &161526218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161526216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0ee2e3b914f7940bd2010a68d3861b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CropDatabase
+  allCrops:
+  - {fileID: 11400000, guid: b711c6d015ca3ff4fa5ce89113cb02a9, type: 2}
+  - {fileID: 11400000, guid: 375a3412f206ab745aa3a791d7a6fa58, type: 2}
+  - {fileID: 11400000, guid: f4ed1df40f5c48b4bb329229b9af4526, type: 2}
+  - {fileID: 11400000, guid: 06de04969c8a78342941ea87c5923dc1, type: 2}
 --- !u!1 &166427103
 GameObject:
   m_ObjectHideFlags: 0
@@ -2258,6 +2363,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234053708}
   m_CullTransparentMesh: 1
+--- !u!1 &242492550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 242492551}
+  - component: {fileID: 242492552}
+  m_Layer: 0
+  m_Name: ItemDataBase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &242492551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242492550}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1757626412}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &242492552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242492550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0dfb29261fe44c4d9c46253687965cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemDatabase
+  allItems:
+  - {fileID: 11400000, guid: 478b70c4aea12b94e88aaf4528a97a28, type: 2}
+  - {fileID: 11400000, guid: 31ea1343fe3bb264d8124eafb8b27b50, type: 2}
+  - {fileID: 11400000, guid: 1cf9f39564b24fe4e8e8b511f5fdc12e, type: 2}
+  - {fileID: 11400000, guid: 6dde51c05508d564ea2b91991018815f, type: 2}
+  - {fileID: 11400000, guid: ab48a3af25d9c9c4881c10da39d4e3ef, type: 2}
+  - {fileID: 11400000, guid: 3ddad995c3079db4cacf0dab2590ecde, type: 2}
+  - {fileID: 11400000, guid: 94d81b81b02d90748aa8a7a0c0b31deb, type: 2}
+  - {fileID: 11400000, guid: 3b5714d6ed798744dbd9a184e1065b10, type: 2}
 --- !u!1 &244977946
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,7 +2516,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262433835}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.82281, y: -6.49825, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7693,6 +7851,8 @@ GameObject:
   - component: {fileID: 700421270}
   - component: {fileID: 700421272}
   - component: {fileID: 700421271}
+  - component: {fileID: 700421273}
+  - component: {fileID: 700421274}
   m_Layer: 0
   m_Name: FarmTile9
   m_TagString: Untagged
@@ -7778,6 +7938,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &700421273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700421269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041754267e661cb44949b5ccc017be22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PersistentObjectID
+  objectID: Farm_Tile9
+--- !u!114 &700421274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700421269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d70c0726a437f4eb2b5d5b69c5264c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FarmTileStateHandler
+  cropPlantPrefab: {fileID: 1052015389745415763, guid: 82438fad98a9e4f4d9ff6e03af5a135b, type: 3}
 --- !u!1 &702361806
 GameObject:
   m_ObjectHideFlags: 0
@@ -18896,6 +19082,8 @@ GameObject:
   - component: {fileID: 1001599429}
   - component: {fileID: 1001599428}
   - component: {fileID: 1001599427}
+  - component: {fileID: 1001599430}
+  - component: {fileID: 1001599431}
   m_Layer: 0
   m_Name: FarmTile1
   m_TagString: Untagged
@@ -18981,6 +19169,32 @@ Transform:
   - {fileID: 613226079}
   m_Father: {fileID: 262433836}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1001599430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001599426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041754267e661cb44949b5ccc017be22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PersistentObjectID
+  objectID: Farm_Tile1
+--- !u!114 &1001599431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001599426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d70c0726a437f4eb2b5d5b69c5264c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FarmTileStateHandler
+  cropPlantPrefab: {fileID: 1052015389745415763, guid: 82438fad98a9e4f4d9ff6e03af5a135b, type: 3}
 --- !u!1 &1014005105
 GameObject:
   m_ObjectHideFlags: 0
@@ -19696,6 +19910,8 @@ GameObject:
   - component: {fileID: 1085011488}
   - component: {fileID: 1085011490}
   - component: {fileID: 1085011489}
+  - component: {fileID: 1085011491}
+  - component: {fileID: 1085011492}
   m_Layer: 0
   m_Name: FarmTile6
   m_TagString: Untagged
@@ -19781,6 +19997,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1085011491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085011487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041754267e661cb44949b5ccc017be22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PersistentObjectID
+  objectID: Farm_Tile6
+--- !u!114 &1085011492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085011487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d70c0726a437f4eb2b5d5b69c5264c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FarmTileStateHandler
+  cropPlantPrefab: {fileID: 1052015389745415763, guid: 82438fad98a9e4f4d9ff6e03af5a135b, type: 3}
 --- !u!1 &1091311948
 GameObject:
   m_ObjectHideFlags: 0
@@ -20650,6 +20892,8 @@ GameObject:
   - component: {fileID: 1155249037}
   - component: {fileID: 1155249039}
   - component: {fileID: 1155249038}
+  - component: {fileID: 1155249040}
+  - component: {fileID: 1155249041}
   m_Layer: 0
   m_Name: FarmTile4
   m_TagString: Untagged
@@ -20735,6 +20979,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1155249040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155249036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041754267e661cb44949b5ccc017be22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PersistentObjectID
+  objectID: Farm_Tile4
+--- !u!114 &1155249041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155249036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d70c0726a437f4eb2b5d5b69c5264c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FarmTileStateHandler
+  cropPlantPrefab: {fileID: 1052015389745415763, guid: 82438fad98a9e4f4d9ff6e03af5a135b, type: 3}
 --- !u!1 &1158265890
 GameObject:
   m_ObjectHideFlags: 0
@@ -23721,6 +23991,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310221415}
   m_CullTransparentMesh: 1
+--- !u!1 &1313106686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1313106687}
+  - component: {fileID: 1313106688}
+  m_Layer: 0
+  m_Name: WorldCropGrowthManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1313106687
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313106686}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1757626412}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1313106688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313106686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e13b8fb8733e9446ad85f9fac35fd8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldCropGrowthManager
+  farmSceneName: SpawnArea
 --- !u!1 &1318983046
 GameObject:
   m_ObjectHideFlags: 0
@@ -24282,6 +24597,8 @@ GameObject:
   - component: {fileID: 1368284065}
   - component: {fileID: 1368284064}
   - component: {fileID: 1368284063}
+  - component: {fileID: 1368284066}
+  - component: {fileID: 1368284067}
   m_Layer: 0
   m_Name: FarmTile2
   m_TagString: Untagged
@@ -24367,6 +24684,32 @@ Transform:
   - {fileID: 656038060}
   m_Father: {fileID: 262433836}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1368284066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368284062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041754267e661cb44949b5ccc017be22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PersistentObjectID
+  objectID: Farm_Tile2
+--- !u!114 &1368284067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368284062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d70c0726a437f4eb2b5d5b69c5264c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FarmTileStateHandler
+  cropPlantPrefab: {fileID: 1052015389745415763, guid: 82438fad98a9e4f4d9ff6e03af5a135b, type: 3}
 --- !u!1 &1384782812
 GameObject:
   m_ObjectHideFlags: 0
@@ -25730,6 +26073,8 @@ GameObject:
   - component: {fileID: 1497936407}
   - component: {fileID: 1497936406}
   - component: {fileID: 1497936405}
+  - component: {fileID: 1497936408}
+  - component: {fileID: 1497936409}
   m_Layer: 0
   m_Name: FarmTile3
   m_TagString: Untagged
@@ -25815,6 +26160,32 @@ Transform:
   - {fileID: 1199870837}
   m_Father: {fileID: 262433836}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1497936408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497936404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041754267e661cb44949b5ccc017be22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PersistentObjectID
+  objectID: Farm_Tile3
+--- !u!114 &1497936409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497936404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d70c0726a437f4eb2b5d5b69c5264c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FarmTileStateHandler
+  cropPlantPrefab: {fileID: 1052015389745415763, guid: 82438fad98a9e4f4d9ff6e03af5a135b, type: 3}
 --- !u!1 &1506713134
 GameObject:
   m_ObjectHideFlags: 0
@@ -27914,6 +28285,8 @@ GameObject:
   - component: {fileID: 1680358435}
   - component: {fileID: 1680358437}
   - component: {fileID: 1680358436}
+  - component: {fileID: 1680358438}
+  - component: {fileID: 1680358439}
   m_Layer: 0
   m_Name: FarmTile5
   m_TagString: Untagged
@@ -27999,6 +28372,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1680358438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680358434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041754267e661cb44949b5ccc017be22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PersistentObjectID
+  objectID: Farm_Tile5
+--- !u!114 &1680358439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680358434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d70c0726a437f4eb2b5d5b69c5264c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FarmTileStateHandler
+  cropPlantPrefab: {fileID: 1052015389745415763, guid: 82438fad98a9e4f4d9ff6e03af5a135b, type: 3}
 --- !u!1 &1693532343
 GameObject:
   m_ObjectHideFlags: 0
@@ -28013,6 +28412,8 @@ GameObject:
   - component: {fileID: 1693532344}
   - component: {fileID: 1693532348}
   - component: {fileID: 1693532349}
+  - component: {fileID: 1693532350}
+  - component: {fileID: 1693532351}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Untagged
@@ -28208,6 +28609,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 588be0374707c7a41866a27fee2c488f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChestTransferController
+--- !u!114 &1693532350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693532343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041754267e661cb44949b5ccc017be22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PersistentObjectID
+  objectID: SpawnArea_Chest1
+--- !u!114 &1693532351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693532343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4277a84ab722bb4e9a27f18c886bbc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChestStateHandler
 --- !u!1 &1706192229
 GameObject:
   m_ObjectHideFlags: 0
@@ -29369,6 +29795,10 @@ Transform:
   - {fileID: 1819120864}
   - {fileID: 1800436944}
   - {fileID: 582350844}
+  - {fileID: 1927996207}
+  - {fileID: 242492551}
+  - {fileID: 161526217}
+  - {fileID: 1313106687}
   - {fileID: 1091311949}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44649,6 +45079,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916768540}
   m_CullTransparentMesh: 1
+--- !u!1 &1927996206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1927996207}
+  - component: {fileID: 1927996208}
+  m_Layer: 0
+  m_Name: SceneStateManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1927996207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927996206}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1757626412}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1927996208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927996206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 040852f166bbd2941a3488358c71a0a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneStateManager
 --- !u!1 &1931693468
 GameObject:
   m_ObjectHideFlags: 0
@@ -47574,8 +48048,8 @@ SceneRoots:
   - {fileID: 604584572}
   - {fileID: 308687929}
   - {fileID: 1757626412}
-  - {fileID: 850529578}
   - {fileID: 262433836}
+  - {fileID: 850529578}
   - {fileID: 846191015}
   - {fileID: 1506713136}
   - {fileID: 1473109571}

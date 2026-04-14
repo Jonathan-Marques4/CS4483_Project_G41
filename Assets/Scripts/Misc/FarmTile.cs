@@ -51,4 +51,24 @@ public class FarmTile : MonoBehaviour{
             currentCrop.Harvest();
         }
     }
+
+    public void LoadCrop(CropData cropData, GameObject cropPlantPrefab, int growthStage, int daysGrown)
+    {
+        if (cropData == null || cropPlantPrefab == null || cropSpawnPoint == null) return;
+
+        GameObject cropObj = Instantiate(cropPlantPrefab, cropSpawnPoint.position, Quaternion.identity);
+        CropPlant cropPlant = cropObj.GetComponent<CropPlant>();
+
+        if (cropPlant == null)
+        {
+            Destroy(cropObj);
+            return;
+        }
+
+        cropPlant.Initialize(cropData, this);
+        cropPlant.LoadGrowthState(growthStage, daysGrown);
+
+        currentCrop = cropPlant;
+        isOccupied = true;
+    }
 }

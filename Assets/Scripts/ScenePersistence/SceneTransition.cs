@@ -39,16 +39,31 @@ public class SceneTransition : MonoBehaviour
 
     public void Transition()
     {
-        Debug.Log("Transitioning to scene: " + targetSceneName + " with spawn ID: " + targetSpawnID);
-
         if (GameStateManager.Instance != null && GameStateManager.Instance.IsGameplayBlocked())
             return;
+
+        SaveCurrentSceneState();
 
         if (PlayerSpawnManager.Instance != null)
         {
             PlayerSpawnManager.Instance.SetPendingSpawn(targetSpawnID);
         }
 
-        SceneManager.LoadScene(targetSceneName);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(targetSceneName);
+    }
+
+    private void SaveCurrentSceneState()
+    {
+        ChestStateHandler[] chests = FindObjectsByType<ChestStateHandler>(FindObjectsSortMode.None);
+        foreach (ChestStateHandler chest in chests)
+        {
+            chest.SaveState();
+        }
+
+        FarmTileStateHandler[] farmTiles = FindObjectsByType<FarmTileStateHandler>(FindObjectsSortMode.None);
+        foreach (FarmTileStateHandler tile in farmTiles)
+        {
+            tile.SaveState();
+        }
     }
 }
