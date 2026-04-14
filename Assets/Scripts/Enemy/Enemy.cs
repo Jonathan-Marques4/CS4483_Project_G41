@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float dmg = 10f;
     [SerializeField] private float attackRange = 1.5f;
     [SerializeField] private float attackCooldown = 1f;
+    [SerializeField] private int xpReward = 5;
 
     private HealthComponent healthComp;
     private HealthComponent playerHealth;
@@ -18,7 +19,7 @@ public class Enemy : MonoBehaviour
     {
         healthComp = GetComponent<HealthComponent>();
         if (healthComp != null)
-            healthComp.OnDeath += () => Destroy(gameObject);
+            healthComp.OnDeath += HandleDeath;
 
         var player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
@@ -60,5 +61,15 @@ public class Enemy : MonoBehaviour
         if (hitProtect || healthComp == null) return;
         healthComp.TakeDamage(amount);
         StartCoroutine(HitProtection());
+    }
+
+    private void HandleDeath()
+    {
+        if (PlayerLevelSystem.Instance != null)
+        {
+            PlayerLevelSystem.Instance.AddXP(xpReward);
+        }
+
+        Destroy(gameObject);
     }
 }

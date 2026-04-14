@@ -77,4 +77,10 @@ public class PlayerEnergy : MonoBehaviour
 
         OnEnergyChanged?.Invoke();
     }
+
+    public void ForceNotify()
+    {
+        NotifyEnergyChanged();
+    }
+    
 }

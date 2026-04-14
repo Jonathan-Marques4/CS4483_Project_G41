@@ -81,13 +81,18 @@ public class CropPlant : MonoBehaviour{
     {
         if (!CanHarvest() || cropData == null) return;
 
-        if (InventoryManager.Instance != null){
-
+        if (InventoryManager.Instance != null)
+        {
             InventoryManager.Instance.AddItem(cropData.harvestItem, cropData.harvestAmount);
         }
 
-        if (plantedTile != null){
-            
+        if (PlayerLevelSystem.Instance != null)
+        {
+            PlayerLevelSystem.Instance.AddXP(cropData.harvestXP);
+        }
+
+        if (plantedTile != null)
+        {
             plantedTile.ClearCrop();
         }
 
