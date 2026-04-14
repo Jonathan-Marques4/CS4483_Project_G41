@@ -9,6 +9,7 @@ public class PlayerMovement2D : MonoBehaviour{
     public SpriteRenderer spriteRenderer;
 
     private Vector2 movement;
+    public Vector2 LastMoveDirection { get; private set; } = Vector2.down;
     private Vector2 lastMoveDirection = Vector2.down;
 
     void Update(){
@@ -27,6 +28,7 @@ public class PlayerMovement2D : MonoBehaviour{
         if (movement != Vector2.zero){
 
             lastMoveDirection = movement;
+            LastMoveDirection = movement;
         }
 
         HandleAnimation();

@@ -9,10 +9,14 @@ public class PlayerCombat : MonoBehaviour
 
     private bool canAttack = true;
     private Camera cam;
+    private Animator animator;
+    private SimpleTopDownAnimator topDownAnimator;
 
     void Start()
     {
         cam = Camera.main;
+        animator = GetComponentInChildren<Animator>();
+        topDownAnimator = GetComponent<SimpleTopDownAnimator>();
     }
 
     void Update()
@@ -25,14 +29,27 @@ public class PlayerCombat : MonoBehaviour
     {
         canAttack = false;
 
-        // Find direction toward mouse
+        // Direction toward mouse (used for hitbox)
         Vector2 mouseWorld = cam.ScreenToWorldPoint(Input.mousePosition);
         Vector2 dir = (mouseWorld - (Vector2)transform.position).normalized;
 
-        // Offset the hit center slightly in the attack direction
-        Vector2 hitCenter = (Vector2)transform.position + dir * (attackRange * 0.6f);
+        // Trigger attack animation based on player's facing direction
+        if (animator != null)
+        {
+            Vector2 facing = topDownAnimator != null ? topDownAnimator.LastDirection : Vector2.down;
 
-        // Hit all enemies in range
+            int attackDir;
+            if (Mathf.Abs(facing.y) > Mathf.Abs(facing.x))
+                attackDir = facing.y > 0 ? 1 : 2;  // up or down
+            else
+                attackDir = 0;                      // side
+
+            animator.SetInteger("AttackDir", attackDir);
+            animator.SetTrigger("Attack");
+        }
+
+        // Hit all enemies in range toward mouse
+        Vector2 hitCenter = (Vector2)transform.position + dir * (attackRange * 0.6f);
         Collider2D[] hits = Physics2D.OverlapCircleAll(hitCenter, attackRange);
         foreach (var hit in hits)
         {
