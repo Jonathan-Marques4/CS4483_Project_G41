@@ -98,4 +98,23 @@ public class CropPlant : MonoBehaviour{
 
         Destroy(gameObject);
     }
+
+
+    public int GetCurrentStage()
+    {
+        return currentStage;
+    }
+
+    public int GetDaysGrown()
+    {
+        return daysGrown;
+    }
+
+    public void LoadGrowthState(int stage, int grownDays)
+    {
+        currentStage = stage;
+        daysGrown = grownDays;
+        isFullyGrown = currentStage >= 2;
+        UpdateVisual();
+    }
 }

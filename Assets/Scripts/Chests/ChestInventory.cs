@@ -67,4 +67,46 @@ public class ChestInventory : MonoBehaviour
         if (index < 0 || index >= slots.Count) return;
         slots[index].Clear();
     }
+
+    public ChestSaveData GetSaveData()
+    {
+        ChestSaveData data = new ChestSaveData();
+
+        for (int i = 0; i < slots.Count; i++)
+        {
+            if (!slots[i].IsEmpty())
+            {
+                ChestItemSaveData itemData = new ChestItemSaveData
+                {
+                    itemName = slots[i].item.itemName,
+                    quantity = slots[i].quantity
+                };
+
+                data.items.Add(itemData);
+            }
+        }
+
+        return data;
+    }
+
+public void LoadFromSaveData(ChestSaveData data, ItemDatabase itemDatabase)
+    {
+        for (int i = 0; i < slots.Count; i++)
+        {
+            slots[i].Clear();
+        }
+
+        if (data == null || itemDatabase == null) return;
+
+        foreach (ChestItemSaveData itemData in data.items)
+        {
+            ItemData item = itemDatabase.GetItemByName(itemData.itemName);
+            if (item != null)
+            {
+                AddItem(item, itemData.quantity);
+            }
+        }
+    }
+
+    
 }
