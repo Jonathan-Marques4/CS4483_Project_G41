@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerCombat : MonoBehaviour
 {
-    [SerializeField] private float dmg = 15f;
+    [SerializeField] private float baseDmg = 15f;
     [SerializeField] private float attackRange = 1.5f;
     [SerializeField] private float attackCooldown = 0.4f;
 
@@ -11,12 +11,14 @@ public class PlayerCombat : MonoBehaviour
     private Camera cam;
     private Animator animator;
     private SimpleTopDownAnimator topDownAnimator;
+    private WeaponVisualController weaponVisual;
 
     void Start()
     {
         cam = Camera.main;
         animator = GetComponentInChildren<Animator>();
         topDownAnimator = GetComponent<SimpleTopDownAnimator>();
+        weaponVisual = GetComponent<WeaponVisualController>();
     }
 
     void Update()
@@ -33,16 +35,33 @@ public class PlayerCombat : MonoBehaviour
         Vector2 mouseWorld = cam.ScreenToWorldPoint(Input.mousePosition);
         Vector2 dir = (mouseWorld - (Vector2)transform.position).normalized;
 
-        // Trigger attack animation based on player's facing direction
-        if (animator != null)
-        {
-            Vector2 facing = topDownAnimator != null ? topDownAnimator.LastDirection : Vector2.down;
+        Vector2 facing = topDownAnimator != null ? topDownAnimator.LastDirection : Vector2.down;
 
+        // Use equipped weapon damage if a weapon is selected, otherwise base damage
+        float dmg = baseDmg;
+        bool hasSword = false;
+        if (InventoryManager.Instance != null)
+        {
+            var slot = InventoryManager.Instance.GetSelectedHotbarSlot();
+            if (slot != null && !slot.IsEmpty() && slot.item != null && slot.item.itemType == ItemType.Weapon)
+            {
+                dmg = slot.item.weaponDamage;
+                hasSword = true;
+            }
+        }
+
+        // Sword equipped: sword sweep only. No sword: play body hit animation.
+        if (hasSword)
+        {
+            weaponVisual?.PlaySwing(facing);
+        }
+        else if (animator != null)
+        {
             int attackDir;
             if (Mathf.Abs(facing.y) > Mathf.Abs(facing.x))
-                attackDir = facing.y > 0 ? 1 : 2;  // up or down
+                attackDir = facing.y > 0 ? 1 : 2;
             else
-                attackDir = 0;                      // side
+                attackDir = 0;
 
             animator.SetInteger("AttackDir", attackDir);
             animator.SetTrigger("Attack");
