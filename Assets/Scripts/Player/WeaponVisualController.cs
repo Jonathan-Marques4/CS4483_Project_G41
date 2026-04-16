@@ -3,11 +3,13 @@ using System.Collections;
 
 public class WeaponVisualController : MonoBehaviour
 {
-    // Offsets from player center in world space — tweak in Inspector
-    [SerializeField] private Vector3 offsetDown  = new Vector3( 0.26f, -0.11f, 0f);
-    [SerializeField] private Vector3 offsetUp    = new Vector3( 0.26f,  0.08f, 0f);
-    [SerializeField] private Vector3 offsetSide  = new Vector3( 0.38f, -0.08f, 0f);
+    [Header("Offsets - TUNE THESE IN INSPECTOR")]
+    [Tooltip("X = distance from visual body center to pommel. Make this the exact distance so pommel sits just outside hitbox.")]
+    [SerializeField] private Vector3 offsetDown = new Vector3( 0.65f, -0.25f, 0f);
+    [SerializeField] private Vector3 offsetUp   = new Vector3( 0.65f,  0.35f, 0f);
+    [SerializeField] private Vector3 offsetSide = new Vector3( 0.80f, -0.10f, 0f);   // ← Start here. Increase X = farther from body
 
+    [Header("Weapon Settings")]
     [SerializeField] private float weaponScale   = 1.05f;
     [SerializeField] private float swingDuration = 0.25f;
     [SerializeField] private float swingAngle    = 120f;
@@ -15,29 +17,35 @@ public class WeaponVisualController : MonoBehaviour
     [SerializeField] private SimpleTopDownAnimator topDownAnimator;
 
     private SpriteRenderer weaponRenderer;
+    private Transform weaponHolder;
+    private SpriteRenderer charRenderer;   // ONLY used to read current visual center (bounds)
     private ItemData lastEquipped;
     private float swingRotationOffset = 0f;
 
     void Start()
     {
-        // Find WeaponHolder anywhere in children
         foreach (var t in transform.GetComponentsInChildren<Transform>(true))
         {
             if (t.name == "WeaponHolder")
             {
+                weaponHolder = t;
                 weaponRenderer = t.GetComponent<SpriteRenderer>();
                 if (weaponRenderer == null)
                     weaponRenderer = t.gameObject.AddComponent<SpriteRenderer>();
+
                 weaponRenderer.sortingLayerName = "Player";
                 weaponRenderer.sortingOrder = 10;
                 weaponRenderer.enabled = false;
-                t.localScale = Vector3.one * weaponScale;
-                break;
+                weaponHolder.localScale = Vector3.one * weaponScale;
+            }
+            else if (t.name == "Sprite" && charRenderer == null)
+            {
+                charRenderer = t.GetComponent<SpriteRenderer>();
             }
         }
 
-        if (weaponRenderer == null)
-            Debug.LogWarning("WeaponVisualController: WeaponHolder not found under " + gameObject.name);
+        if (weaponHolder == null)
+            Debug.LogError("WeaponHolder child not found! (must exist under player)");
 
         if (topDownAnimator == null)
             topDownAnimator = GetComponent<SimpleTopDownAnimator>();
@@ -72,11 +80,7 @@ public class WeaponVisualController : MonoBehaviour
         if (weaponRenderer == null || InventoryManager.Instance == null) return;
 
         var slot = InventoryManager.Instance.GetSelectedHotbarSlot();
-        bool hasSword = slot != null && !slot.IsEmpty()
-                        && slot.item != null
-                        && slot.item.itemType == ItemType.Weapon;
-
-        if (!hasSword)
+        if (slot == null || slot.IsEmpty() || slot.item?.itemType != ItemType.Weapon)
         {
             weaponRenderer.enabled = false;
             lastEquipped = null;
@@ -93,37 +97,49 @@ public class WeaponVisualController : MonoBehaviour
 
         Vector2 dir = topDownAnimator != null ? topDownAnimator.LastDirection : Vector2.down;
 
-        // Determine world-space offset and tip direction
-        Vector3 worldOffset;
-        Vector2 tipDir;
-        bool flipX = false;
+        Vector3 worldOffset = Vector3.zero;
+        Vector2 tipDir = Vector2.down;
+        bool weaponFlipX = false;
 
-        if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
+        // ==================== THIS IS THE FIX ====================
+        bool facingRight = dir.x > 0;
+
+        if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))   // LEFT / RIGHT
         {
-            bool right = dir.x > 0;
-            worldOffset = new Vector3((right ? 1f : -1f) * offsetSide.x, offsetSide.y, 0f);
-            tipDir  = right ? Vector2.right : Vector2.left;
-            flipX   = !right;
+            // Get the CURRENT visual center of the character sprite (already accounts for flipX)
+            float visualCenterX = 0f;
+            if (charRenderer != null)
+            {
+                visualCenterX = charRenderer.bounds.center.x - transform.position.x;
+            }
+
+            // Place sword pommel at: visualCenter + facing offset
+            // This makes the distance from body to pommel IDENTICAL on left and right
+            float sideX = facingRight ? offsetSide.x : -offsetSide.x;
+
+            worldOffset = new Vector3(visualCenterX + sideX, offsetSide.y, 0f);
+
+            tipDir = facingRight ? Vector2.right : Vector2.left;
+            weaponFlipX = !facingRight;
         }
-        else if (dir.y > 0)
+        else if (dir.y > 0)   // UP
         {
             worldOffset = offsetUp;
             tipDir = Vector2.up;
         }
-        else
+        else                  // DOWN
         {
             worldOffset = offsetDown;
             tipDir = Vector2.down;
         }
 
-        // World-space position — bypasses all parent transform issues
+        // Position in world space (most reliable method)
         weaponRenderer.transform.position = transform.position + worldOffset;
 
-        // World-space rotation: rotate the sprite so its local +Y (tip) points toward tipDir
-        // atan2 gives angle of tipDir from +X axis; subtract 90° because sprite tip is at +Y (not +X)
+        // Rotation so tip points in facing direction
         float angle = Mathf.Atan2(tipDir.y, tipDir.x) * Mathf.Rad2Deg + 90f + swingRotationOffset;
         weaponRenderer.transform.rotation = Quaternion.Euler(0f, 0f, angle);
 
-        weaponRenderer.flipX = flipX;
+        weaponRenderer.flipX = weaponFlipX;
     }
 }
