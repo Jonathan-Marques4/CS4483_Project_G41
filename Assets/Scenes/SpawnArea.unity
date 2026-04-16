@@ -7122,16 +7122,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bee72c17217e684cbcfd902ff8eb4ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponVisualController
-  topDownAnimator: {fileID: 0}
-  offsetDown: {x: 0.26, y: -0.11, z: 0}
-  offsetUp: {x: 0.26, y: 0.08, z: 0}
-  offsetSide: {x: 0.38, y: -0.08, z: 0}
-  rotationDown: 180
-  rotationUp: 0
-  rotationSide: -90
+  offsetDown: {x: 0.12, y: -0.45, z: 0}
+  offsetUp: {x: 0.12, y: 0.45, z: 0}
+  offsetSide: {x: 0.45, y: -0.08, z: 0}
   weaponScale: 1.05
   swingDuration: 0.25
   swingAngle: 120
+  topDownAnimator: {fileID: 0}
 --- !u!1 &613226078
 GameObject:
   m_ObjectHideFlags: 0
