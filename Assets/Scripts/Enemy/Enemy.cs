@@ -58,7 +58,9 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
-        if (hitProtect || healthComp == null) return;
+        if (hitProtect) return;
+        FloatingDamageText.Spawn(transform.position, amount);
+        if (healthComp == null) return;
         healthComp.TakeDamage(amount);
         StartCoroutine(HitProtection());
     }
