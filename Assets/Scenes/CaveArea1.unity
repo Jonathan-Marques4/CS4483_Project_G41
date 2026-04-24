@@ -3247,8 +3247,8 @@ MonoBehaviour:
     quantity: 3
   - item: {fileID: 11400000, guid: 1cf9f39564b24fe4e8e8b511f5fdc12e, type: 2}
     quantity: 5
-  - item: {fileID: 0}
-    quantity: 0
+  - item: {fileID: 11400000, guid: 5775d66e022922a4fbf764dc64a8bf97, type: 2}
+    quantity: 1
   - item: {fileID: 0}
     quantity: 0
   - item: {fileID: 0}

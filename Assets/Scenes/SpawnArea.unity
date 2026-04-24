@@ -19904,7 +19904,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1064938481
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23459,7 +23459,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -388.9, y: 139.8}
+  m_AnchoredPosition: {x: -388.5, y: 134.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1248498387
@@ -25779,7 +25779,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -389, y: 118}
+  m_AnchoredPosition: {x: -388.5, y: 116.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1403763763
@@ -29229,12 +29229,12 @@ MonoBehaviour:
     quantity: 10
   - item: {fileID: 11400000, guid: 1cf9f39564b24fe4e8e8b511f5fdc12e, type: 2}
     quantity: 3
-  - item: {fileID: 11400000, guid: 5775d66e022922a4fbf764dc64a8bf97, type: 2}
-    quantity: 1
-  - item: {fileID: 11400000, guid: 2d39ba6e7c4a63b439fe2145a3a9d4bf, type: 2}
-    quantity: 1
-  - item: {fileID: 11400000, guid: 7dc3a26a7ad7cb045bdf138eb450f517, type: 2}
-    quantity: 1
+  - item: {fileID: 11400000, guid: 3ddad995c3079db4cacf0dab2590ecde, type: 2}
+    quantity: 5
+  - item: {fileID: 0}
+    quantity: 0
+  - item: {fileID: 0}
+    quantity: 0
   - item: {fileID: 0}
     quantity: 0
   - item: {fileID: 0}
@@ -31004,6 +31004,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776577417}
   m_CullTransparentMesh: 1
+--- !u!1 &1780008147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1780008149}
+  - component: {fileID: 1780008148}
+  m_Layer: 0
+  m_Name: Spawn_FromCave5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1780008148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780008147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40cab638006891d4da941994a1a0fb8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneSpawnPoint
+  spawnID: FromCave5ToSpawnArea
+--- !u!4 &1780008149
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780008147}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 22.83, y: -4.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1780402921
 GameObject:
   m_ObjectHideFlags: 0
@@ -49094,3 +49139,4 @@ SceneRoots:
   - {fileID: 1693532347}
   - {fileID: 1143318516}
   - {fileID: 26834495}
+  - {fileID: 1780008149}
