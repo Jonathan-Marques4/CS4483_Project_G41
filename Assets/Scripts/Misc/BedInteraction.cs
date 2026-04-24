@@ -7,17 +7,31 @@ public class BedInteraction : MonoBehaviour
 
     public void Sleep()
     {
+        
         if (PlayerEnergy.Instance != null)
         {
             PlayerEnergy.Instance.RestoreFullEnergy();
         }
 
+        
         if (TimeManager.Instance != null)
         {
             TimeManager.Instance.AdvanceHours(sleepHours);
         }
 
-        Debug.Log("Player slept for " + sleepHours + " hours and restored full energy.");
+        
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            HealthComponent health = player.GetComponent<HealthComponent>();
+
+            if (health != null)
+            {
+                health.Heal(25f); 
+            }
+        }
+
+        Debug.Log("Player slept, restored energy and gained 25 HP.");
     }
 
     public bool IsPlayerInRange(Transform playerTransform)

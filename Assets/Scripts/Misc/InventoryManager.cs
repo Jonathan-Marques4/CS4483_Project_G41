@@ -201,8 +201,8 @@ public class InventoryManager : MonoBehaviour{
         NotifyInventoryChanged();
     }
 
-    public bool ConsumeSelectedItemForEnergy(){
-
+    public bool ConsumeSelectedItemForEnergy()
+    {
         InventorySlot slot = GetSelectedHotbarSlot();
 
         if (slot == null || slot.IsEmpty() || slot.item == null)
@@ -210,24 +210,35 @@ public class InventoryManager : MonoBehaviour{
 
         ItemData item = slot.item;
 
-        if (item.energyRestoreAmount <= 0)
+        if (item.energyRestoreAmount <= 0 && item.healthRestoreAmount <= 0)
             return false;
 
-        if (PlayerEnergy.Instance != null){
-
+        if (PlayerEnergy.Instance != null && item.energyRestoreAmount > 0)
+        {
             PlayerEnergy.Instance.RestoreEnergy(item.energyRestoreAmount);
+        }
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null && item.healthRestoreAmount > 0)
+        {
+            HealthComponent health = player.GetComponent<HealthComponent>();
+
+            if (health != null)
+            {
+                health.Heal(item.healthRestoreAmount);
+            }
         }
 
         slot.quantity--;
 
-        if (slot.quantity <= 0){
+        if (slot.quantity <= 0)
+        {
             slot.Clear();
         }
 
         ForceRefresh();
         return true;
     }
-
 
     
 
