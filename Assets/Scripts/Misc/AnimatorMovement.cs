@@ -10,6 +10,7 @@ public class SimpleTopDownAnimator : MonoBehaviour
 
     private Vector2 movement;
     private string currentAnimation;
+    public Vector2 LastDirection { get; private set; } = Vector2.down;
     private Vector2 lastDirection = Vector2.down;
 
     void Update()
@@ -28,6 +29,7 @@ public class SimpleTopDownAnimator : MonoBehaviour
         if (movement != Vector2.zero)
         {
             lastDirection = movement;
+            LastDirection = movement;
         }
 
         HandleAnimation();

@@ -5,7 +5,8 @@ public enum ItemType{
     Crop,
     Tool,
     Food,
-    Material
+    Material,
+    Weapon
 }
 
 [CreateAssetMenu(fileName = "NewItem", menuName = "Inventory/Item")]
@@ -22,6 +23,9 @@ public class ItemData : ScriptableObject{
 
     [Header("Food / Energy")]
     public int energyRestoreAmount = 0;
+
+    [Header("Weapon Data")]
+    public float weaponDamage = 0f;
 
     [Header("Seed Data")]
     public bool isPlantable = false;

@@ -1,20 +1,34 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class HealthUI : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI healthText;
+    public Slider healthSlider;
+    public TextMeshProUGUI healthText;
 
-    [Header("DRAG YOUR PLAYER HERE")]
-    [SerializeField] private HealthComponent playerHealth;
+    private HealthComponent playerHealth;
 
     void Update()
     {
-        if (playerHealth != null && healthText != null)
+        // Grab the reference once the player is available
+        if (playerHealth == null)
         {
-            healthText.text = Mathf.RoundToInt(playerHealth.CurrentHealth) 
-                           + " / " 
-                           + Mathf.RoundToInt(playerHealth.MaxHealth);
+            var player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+                playerHealth = player.GetComponent<HealthComponent>();
+            return;
         }
+
+        if (healthSlider != null)
+        {
+            healthSlider.maxValue = playerHealth.MaxHealth;
+            healthSlider.value    = playerHealth.CurrentHealth;
+        }
+
+        if (healthText != null)
+            healthText.text = Mathf.RoundToInt(playerHealth.CurrentHealth)
+                            + " / "
+                            + Mathf.RoundToInt(playerHealth.MaxHealth);
     }
 }

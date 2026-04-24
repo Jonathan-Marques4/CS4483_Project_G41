@@ -105,6 +105,8 @@ public class ItemUseController : MonoBehaviour
             return;
         }
 
-        Debug.Log("Selected item has no left-click use yet.");
+        // Weapons are handled by PlayerCombat directly — nothing to do here
+        if (selectedItem.itemType != ItemType.Weapon)
+            Debug.Log("Selected item has no left-click use yet.");
     }
 }

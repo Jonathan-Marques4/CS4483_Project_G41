@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 144172530040056030}
   - component: {fileID: 4011748348077383568}
   - component: {fileID: 4616129504962353231}
+  - component: {fileID: 3531751058303816123}
+  - component: {fileID: 5717990423222389108}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
@@ -206,3 +208,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80e072bf54928e148becacfa81f43ffe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  dmg: 10
+  attackRange: 1.5
+  attackCooldown: 1
+  xpReward: 5
+--- !u!114 &3531751058303816123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6175906912466403818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1afed7389c54be458f6114d8880869e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DamageNumberSpawner
+  floatingTextPrefab: {fileID: 6030558719087494601, guid: 0ed72e434e17ded4d9cb85859a6b9218, type: 3}
+  spawnOffset: {x: 0, y: 0.5, z: 0}
+--- !u!114 &5717990423222389108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6175906912466403818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753bfe8866bc31047a5b3cf4b5140057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthComponent
+  maxHealth: 100
+  armor: 0
