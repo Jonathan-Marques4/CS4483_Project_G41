@@ -29,6 +29,9 @@ public class GameStateManager : MonoBehaviour
         if (ChestUI.Instance != null && ChestUI.Instance.IsChestOpen())
             return true;
 
+        if (DeathScreenUI.Instance != null && DeathScreenUI.Instance.panel != null && DeathScreenUI.Instance.panel.activeSelf)
+            return true;
+
         return false;
     }
 }

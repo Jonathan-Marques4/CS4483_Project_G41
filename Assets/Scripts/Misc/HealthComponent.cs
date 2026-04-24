@@ -41,6 +41,11 @@ public class HealthComponent : MonoBehaviour
         OnHealed?.Invoke(actual);
     }
 
+    public float GetMaxHealth()
+    {
+        return maxHealth;
+    }
+
     // ==================== TEST METHODS ====================
     // Remove these later if you want
     public void TestDamage()
