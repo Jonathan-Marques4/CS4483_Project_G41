@@ -6983,6 +6983,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c9a8528c55d704daf5ddbe691cd874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerPlanting
+--- !u!1 &608312424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 608312425}
+  - component: {fileID: 608312426}
+  m_Layer: 0
+  m_Name: PlayerLevelSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &608312425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608312424}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1757626412}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &608312426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608312424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b86fcaf058748409673cf3a13e8122, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerLevelSystem
+  currentLevel: 1
+  currentXP: 0
+  xpToNextLevel: 100
+  xpGrowthPerLevel: 25
+  oxygenIncreasePerLevel: 25
+  energyIncreasePerLevel: 10
+  refillEnergyOnLevelUp: 1
+  refillOxygenOnLevelUp: 1
 --- !u!1 &613226078
 GameObject:
   m_ObjectHideFlags: 0
@@ -30086,6 +30138,7 @@ Transform:
   - {fileID: 242492551}
   - {fileID: 161526217}
   - {fileID: 1313106687}
+  - {fileID: 608312425}
   - {fileID: 1091311949}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
