@@ -18,6 +18,7 @@ MonoBehaviour:
   stackable: 0
   maxStack: 1
   energyRestoreAmount: 0
-  weaponDamage: 25
+  weaponDamage: 20
   isPlantable: 0
   cropToPlant: {fileID: 0}
+  healthRestoreAmount: 0
