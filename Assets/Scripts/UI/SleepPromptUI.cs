@@ -36,7 +36,7 @@ public class SleepPromptUI : MonoBehaviour
             panel.SetActive(true);
 
         if (promptText != null)
-            promptText.text = "Do you want to sleep for 8 hours? \n (Recovers Energy)";
+            promptText.text = "Do you want to sleep for 8 hours? \n (Recovers Energy and 25 HP)";
 
         if (TimeManager.Instance != null)
             TimeManager.Instance.SetTimePaused(true);

@@ -76,10 +76,10 @@ public class OxygenManager : MonoBehaviour
             // Keep it from dropping below zero
             currentOxygen = Mathf.Max(currentOxygen, 0f);
 
-            if (currentOxygen <= 0)
-            {
-                PassOut();
-            }
+            //if (currentOxygen <= 0)
+            //{
+            //    PassOut();
+            //}
         }
         else
         {

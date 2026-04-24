@@ -86,7 +86,7 @@ public class ItemUseController : MonoBehaviour
         ItemData selectedItem = selectedSlot.item;
 
         // 4. Food
-        if (selectedItem.energyRestoreAmount > 0)
+        if (selectedItem.energyRestoreAmount > 0 || selectedItem.healthRestoreAmount > 0)
         {
             if (EatPromptUI.Instance != null)
             {

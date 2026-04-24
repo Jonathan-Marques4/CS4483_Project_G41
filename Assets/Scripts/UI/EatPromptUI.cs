@@ -36,7 +36,17 @@ public class EatPromptUI : MonoBehaviour
             panel.SetActive(true);
 
         if (promptText != null)
-            promptText.text = $"Do you want to eat {item.itemName}?\nRestores {item.energyRestoreAmount} energy.";
+        {
+            string message = $"Do you want to eat {item.itemName}?";
+
+            if (item.energyRestoreAmount > 0)
+                message += $"\nRestores {item.energyRestoreAmount} energy.";
+
+            if (item.healthRestoreAmount > 0)
+                message += $"\nRestores {item.healthRestoreAmount} HP.";
+
+            promptText.text = message;
+        }
 
         if (TimeManager.Instance != null)
             TimeManager.Instance.SetTimePaused(true);

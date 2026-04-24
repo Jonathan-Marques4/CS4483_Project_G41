@@ -41,8 +41,18 @@ public class Enemy : MonoBehaviour
     private IEnumerator Attack()
     {
         attacking = true;
+
         if (playerHealth != null)
+        {
             playerHealth.TakeDamage(dmg);
+
+            // 🔴 Trigger damage flash
+            if (ScreenDamageFlash.Instance != null)
+            {
+                ScreenDamageFlash.Instance.Flash();
+            }
+        }
+
         yield return new WaitForSeconds(attackCooldown);
         attacking = false;
     }

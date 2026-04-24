@@ -30,4 +30,7 @@ public class ItemData : ScriptableObject{
     [Header("Seed Data")]
     public bool isPlantable = false;
     public CropData cropToPlant;
+
+    [Header("Food / Healing")]
+    public int healthRestoreAmount = 0;
 }
