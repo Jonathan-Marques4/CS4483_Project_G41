@@ -7161,7 +7161,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8715401134352587307, guid: 1128435e63c61254393877775c0b4a6a, type: 3}
   m_PrefabInstance: {fileID: 6220120427042936336}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6220120427042936337}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 88c9a8528c55d704daf5ddbe691cd874, type: 3}
@@ -21396,7 +21396,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0.00012207, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1145839937
@@ -49048,10 +49048,6 @@ PrefabInstance:
       propertyPath: oxygenUIContainer
       value: 
       objectReference: {fileID: 2109967811}
-    - target: {fileID: 6754100658353668143, guid: 1128435e63c61254393877775c0b4a6a, type: 3}
-      propertyPath: moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 7877864818448938392, guid: 1128435e63c61254393877775c0b4a6a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15
@@ -49099,30 +49095,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 723298425094645640, guid: 1128435e63c61254393877775c0b4a6a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6220120427042936338}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1128435e63c61254393877775c0b4a6a, type: 3}
---- !u!1 &6220120427042936337 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 723298425094645640, guid: 1128435e63c61254393877775c0b4a6a, type: 3}
-  m_PrefabInstance: {fileID: 6220120427042936336}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6220120427042936338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6220120427042936337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0088241a714e23c4f9bff3163b5056b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerDeathHandler
-  respawnSceneName: SpawnArea
-  respawnSpawnID: Default
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

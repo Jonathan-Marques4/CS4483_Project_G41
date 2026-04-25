@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement; 
 using UnityEngine.UI;
 
+
 public class OxygenManager : MonoBehaviour
 {
     public static OxygenManager Instance;
@@ -19,6 +20,12 @@ public class OxygenManager : MonoBehaviour
     [Header("UI Settings")]
     public GameObject oxygenUIContainer; 
     public Image oxygenBarFill;
+
+    [Header("Audio Settings")]
+    public AudioSource audioSource;
+    public AudioClip lowOxygenAlert;
+    public float alertThreshold = 25f; // Start beeping at 25% oxygen
+    private bool isAlerting = false;
 
 
     private void Awake()
@@ -94,6 +101,25 @@ public class OxygenManager : MonoBehaviour
         {
             
             oxygenBarFill.fillAmount = currentOxygen / maxOxygen; 
+        }
+         HandleOxygenAudio();
+    }
+    void HandleOxygenAudio() {
+    // If oxygen is low and we aren't already alerting
+    if (currentOxygen <= alertThreshold && !isAlerting && isHelmetOn) {
+        isAlerting = true;
+        InvokeRepeating("PlayAlertSound", 0f, 1.0f); // Beep every 1 second
+    } 
+    // If oxygen is refilled or we are safe, stop the beeping
+    else if ((currentOxygen > alertThreshold || !isHelmetOn) && isAlerting) {
+        isAlerting = false;
+        CancelInvoke("PlayAlertSound");
+        }
+    }
+
+    void PlayAlertSound() {
+        if (audioSource && lowOxygenAlert) {
+            audioSource.PlayOneShot(lowOxygenAlert);
         }
     }
 
