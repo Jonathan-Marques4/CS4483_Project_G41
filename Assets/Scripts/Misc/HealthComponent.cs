@@ -46,6 +46,12 @@ public class HealthComponent : MonoBehaviour
         return maxHealth;
     }
 
+    public void ReviveFull()
+    {
+        CurrentHealth = maxHealth;
+        OnHealed?.Invoke(maxHealth);
+    }
+
     // ==================== TEST METHODS ====================
     // Remove these later if you want
     public void TestDamage()

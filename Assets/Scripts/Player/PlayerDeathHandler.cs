@@ -52,8 +52,10 @@ public class PlayerDeathHandler : MonoBehaviour
 
         SceneManager.LoadScene(respawnSceneName);
 
+        yield return null;
+
         if (health != null)
-            health.Heal(health.GetMaxHealth());
+            health.ReviveFull();
 
         isDead = false;
     }
