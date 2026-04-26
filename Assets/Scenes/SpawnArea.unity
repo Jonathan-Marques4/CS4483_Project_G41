@@ -49045,6 +49045,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 62723147}
     - target: {fileID: 3122139690064024760, guid: 1128435e63c61254393877775c0b4a6a, type: 3}
+      propertyPath: oxygenDrainRate
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122139690064024760, guid: 1128435e63c61254393877775c0b4a6a, type: 3}
       propertyPath: oxygenUIContainer
       value: 
       objectReference: {fileID: 2109967811}
